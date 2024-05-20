@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const getProductList = createAsyncThunk(
   "products/getProductList", // 액션의 이름
   async (category) => {
-    let url = `http://localhost:5000/products`;
+    let url = `https://my-json-server.typicode.com/accelKim/Shopping/products`;
     if (category) {
       url += `?category=${category}`;
     }
